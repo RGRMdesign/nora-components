@@ -3,6 +3,10 @@
 @import "./reset";
 @import "./mixins/mixins";
 
+// NORA Theme
+@import "./nora-theme.scss";
+@import "./font.scss";
+
 // Global styles
 @import "./mwreset";
 @import "./global";

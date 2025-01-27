@@ -12,8 +12,10 @@ html {
 
 body {
 	font-family: var(--nora-document-font-family);
+	font-family: 'Source Sans 3', sans-serif;
 	font-size: var(--nora-document-font-size);
 	line-height: var(--nora-document-line-height);
+	font-weight: var(--nora-document-font-weight);
 }
 
 .visually-hidden {
