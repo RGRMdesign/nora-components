@@ -1,0 +1,45 @@
+.thumbinner, .thumb {
+  background: #fff !important;
+  border: none !important;
+
+  img {
+    border-radius: var(--nora-figure-media-border-radius);
+    border: none;
+  }
+
+  .thumbcaption {
+    color: var(--nora-figure-figcaption-color);
+    font-size: var(--nora-figure-figcaption-font-size);
+    gap: var(--nora-space-150);
+    padding: 0 !important;
+
+    &:before {
+      padding-right: .2em;
+    }
+  }
+
+  .magnify {
+    a {
+      width: auto;
+      height: auto;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-image: url('/skins/NORA/resources/images/info-circle.svg') !important;
+      background-size: 20px;
+      padding-right: 1.3em;
+      color: var(--nora-figure-figcaption-color) !important;
+
+      &:focus {
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        padding-right: 1.3em;
+      }
+
+      &:before {
+        content: 'Bestandsinfo';
+        padding-right: .2em;
+      }
+    }
+  }
+}

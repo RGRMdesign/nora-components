@@ -1,0 +1,88 @@
+div.link-overview {
+  border: 1px solid var(--nora-link-overview-items-container-border-top-color);
+  padding: 1em;
+  .heading {
+    color: var(--nora-link-overview-header-color);
+    font-size: var(--nora-link-overview-header-font-size);
+    font-weight: var(--nora-link-overview-header-font-weight);
+    line-height: var(--nora-link-overview-header-line-height);
+    display: block;
+    border-bottom: 1px solid var(--nora-link-overview-items-container-border-top-color);
+    padding-bottom: 1em;
+    text-transform: var(--nora-link-overview-header-text-transform);
+    letter-spacing: var(--nora-link-overview-header-letter-spacing);
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    .link-item {
+      a {
+        @include navigation-item("nora-link-overview-item");
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: var(--nora-link-overview-item-border-bottom-width) solid var(--nora-link-overview-items-container-border-top-color);
+        padding: 1em 0;
+        text-decoration: none;
+
+        .link-item-content {
+          display: flex;
+          flex-direction: column;
+        }
+
+        span.name {
+          color: var(--nora-link-overview-item-name-color);
+          font-size: var(--nora-link-overview-item-name-font-size);
+          font-weight: var(--nora-link-overview-item-name-font-weight);
+          line-height: var(--nora-link-overview-item-name-line-height);
+        }
+
+        span.description {
+          color: var(--nora-link-overview-item-description-color);
+          font-size: var(--nora-link-overview-item-description-font-size);
+          line-height: var(--nora-link-overview-item-description-line-height);
+        }
+
+        &:hover {
+          span.name {
+            text-decoration: var(--nora-link-overview-item-hover-name-text-decoration);
+            color: var(--nora-link-overview-item-hover-name-color);
+          }
+        }
+
+        &:focus-visible {
+          span.name {
+            color: var(--nora-link-overview-item-focus-visible-name-color);
+          }
+          span.description {
+            color: var(--nora-link-overview-item-focus-visible-description-color);
+          }
+        }
+
+        &:hover, &:focus-visible {
+          &:after {
+            padding-right: 0;
+            color: var(--nora-link-overview-item-hover-icon-color);
+          }
+        }
+
+        &:after {
+          @include ti-styles;
+          content: "\ea1c";
+          color: var(--nora-link-overview-item-icon-color);
+          font-size: var(--nora-size-icon-lg);
+          padding-right: .2em;
+          transition: 200ms;
+        }
+
+      }
+
+      &:last-child {
+        a {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

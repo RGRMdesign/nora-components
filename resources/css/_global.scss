@@ -1,0 +1,40 @@
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-variant-ligatures: none;
+	-webkit-font-variant-ligatures: none;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+body {
+	font-family: var(--nora-document-font-family);
+	font-size: var(--nora-document-font-size);
+	line-height: var(--nora-document-line-height);
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.ti {
+	font-size: var(--nora-size-icon-lg);
+}
+
+.error-message {
+	color: red;
+	background: #ffe4e4;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: .25em;
+}

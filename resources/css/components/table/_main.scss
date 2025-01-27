@@ -1,0 +1,100 @@
+table.wikitable {
+  font-family: var(--utrecht-table-font-family);
+  font-size: var(--utrecht-table-font-size);
+  line-height: var(--utrecht-table-line-height);
+  border: none;
+
+  th, td {
+    border: none !important;
+    padding: .5em !important;
+  }
+
+  caption {
+    margin-block-end: var(--utrecht-table-caption-margin-block-end);
+    font-size: var(--utrecht-table-caption-font-size);
+    font-family: var(--utrecht-table-caption-font-family);
+    font-weight: var(--utrecht-table-caption-font-weight);
+    line-height: var(--utrecht-table-caption-line-height);
+    text-align: start;  /** missing upstream */
+  }
+
+  tr > th {
+    font-weight: var(--utrecht-table-header-cell-font-weight);
+    padding-block-start: var(--utrecht-table-header-padding-block-start);
+    padding-block-end: var(--utrecht-table-header-padding-block-end);
+    padding-inline: var(--utrecht-table-header-gap);
+    border-block-end: var(--utrecht-table-row-border-block-end-width) solid var(--utrecht-table-row-border-block-end-color) !important;
+    background: transparent !important;
+    text-align: left;
+    a {
+      color: #fff !important;
+    }
+  }
+
+  thead, tr th {
+    background-color: var(--utrecht-table-header-background-color) !important;
+    color: var(--utrecht-table-header-color);
+  }
+
+  tbody {
+    tr {
+      border-block-end: var(--utrecht-table-row-border-block-end-width) solid var(--utrecht-table-row-border-block-end-color) !important;
+
+      &:nth-of-type(even) {
+        background-color: var(--utrecht-table-row-alternate-even-background-color);
+        color: var(--utrecht-table-row-alternate-even-color);
+      }
+      &:nth-of-type(odd) {
+        background-color: var(--utrecht-table-row-alternate-odd-background-color);
+        color: var(--utrecht-table-row-alternate-odd-color);
+      }
+    }
+
+    td {
+      padding-block-start: var(--utrecht-table-cell-padding-block-start);
+      padding-block-end: var(--utrecht-table-cell-padding-block-end);
+      padding-inline-start: var(--utrecht-table-cell-padding-inline-start);
+      padding-inline-end: var(--utrecht-table-cell-padding-inline-end);
+      border: none;
+      vertical-align: middle;  /** missing upstream */
+    }
+  }
+
+  tfoot {
+    color: var(--utrecht-table-footer-color);
+    background-color: var(--utrecht-table-footer-background-color);
+
+    td {
+      padding-block-start: var(--utrecht-table-cell-padding-block-start);
+      padding-block-end: var(--utrecht-table-cell-padding-block-end);
+      padding-inline-start: var(--utrecht-table-cell-padding-inline-start);
+      padding-inline-end: var(--utrecht-table-cell-padding-inline-end);
+    }
+  }
+
+  @media (min-width: 75em) {
+    font-size: var(--utrecht-table-large-vw-font-size);
+    line-height: var(--utrecht-table-large-vw-line-height);
+
+    caption {
+      font-size: var(--utrecht-table-large-vw-caption-font-size);
+      line-height: var(--utrecht-table-large-vw-caption-line-height);
+    }
+
+    thead {
+      th {
+        padding-block-start: var(--utrecht-table-header-large-vw-padding-block-start);
+        padding-block-end: var(--utrecht-table-header-large-vw-padding-block-end);
+      }
+    }
+
+    tbody {
+      td {
+        padding-block-start: var(--utrecht-table-cell-large-vw-padding-block-start);
+        padding-block-end: var(--utrecht-table-cell-large-vw-padding-block-end);
+        padding-inline-start: var(--utrecht-table-cell-large-vw-padding-inline-start);
+        padding-inline-end: var(--utrecht-table-cell-large-vw-padding-inline-end);
+      }
+    }
+  }
+}

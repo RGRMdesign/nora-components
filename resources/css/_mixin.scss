@@ -1,0 +1,99 @@
+@import "_vars";
+
+@mixin padding($component) {
+	padding-block-start: var(--#{$component}-padding-block-start);
+	padding-block-end: var(--#{$component}-padding-block-end);
+	padding-inline-start: var(--#{$component}-padding-inline-start);
+	padding-inline-end: var(--#{$component}-padding-inline-end);
+	//padding: var(--#{$component}-padding-block-start) var(--#{$component}-padding-inline-end) var(--#{$component}-padding-block-end) var(--#{$component}-padding-inline-start);
+}
+
+@mixin respond-to-bigger-than($size) {
+	$breakpoint: map-get($viewport, $size);
+
+	@if $breakpoint == null {
+		@error "Unknown viewport size `#{$size}`. Valid sizes are: #{map-keys($viewport)}";
+	} @else {
+		@media (min-width: $breakpoint) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-to($size) {
+	$breakpoint: map-get($viewport, $size);
+
+	@if $breakpoint == null {
+		@error "Unknown viewport size `#{$size}`. Valid sizes are: #{map-keys($viewport)}";
+	} @else {
+		@media (max-width: $breakpoint) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-between($lower, $upper) {
+	$lower-breakpoint: map-get($viewport, $lower);
+	$upper-breakpoint: map-get($viewport, $upper);
+
+	@if $lower-breakpoint == null or $upper-breakpoint == null {
+		@error "Unknown breakpoint(s): #{$lower} and/or #{$upper}";
+	} @else {
+		@media (min-width: $lower-breakpoint) and (max-width: $upper-breakpoint - 1px) {
+			@content;
+		}
+	}
+}
+
+
+@mixin base-padding {
+	@include padding("nora-breadcrumbs-tools-bar");
+}
+
+@mixin base-link {
+	a {
+		color: var(--utrecht-link-color);
+		text-decoration: var(--utrecht-link-text-decoration);
+		text-decoration-thickness: var(--utrecht-link-text-decoration-thickness);
+		text-decoration-line: var(--utrecht-link-text-decoration);
+		text-underline-offset: var(--utrecht-link-text-underline-offset);
+		text-underline-position: from-font;
+		&:visited {
+			color: var(--utrecht-link-visited-color);
+		}
+		&:hover {
+			color: var(--utrecht-link-hover-color);
+		}
+		&:focus {
+			background: var(--utrecht-link-focus-background-color);
+		}
+		&:focus-visible {
+			color: var(--utrecht-link-focus-color) !important;
+			text-decoration: none;
+		}
+		&:active {
+			color: var(--utrecht-link-active-color);
+		}
+	}
+}
+
+@mixin important-properties($props) {
+	@each $property, $value in $props {
+		#{$property}: #{$value} !important;
+	}
+}
+
+// ICON ONLY
+@mixin ti-styles {
+	font-family: "tabler-icons" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,116 @@
+section.content-navigation {
+	color: var(--nora-color-gray-500, #767676);
+	.content-navigation-container {
+		position: sticky;
+		top: calc( var(--nora-navigation-bar-logo-large-vw-height) + 2.5em);
+	}
+	a {
+		color: var(--nora-color-gray-500, #767676);
+	}
+	h6 {
+		margin: 0 0 24px 0;
+		padding: 0;
+		font-size: var(--nora-link-overview-header-font-size);
+		font-weight: var(--nora-link-overview-header-font-weight);
+		line-height: var(--nora-link-overview-header-line-height);
+		text-transform: var(--nora-link-overview-header-text-transform);
+		letter-spacing: var(--nora-link-overview-header-letter-spacing);
+		color: var(--nora-link-overview-header-color);
+		a {
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+
+			&[aria-expanded="true"] {
+				&::after {
+					content: "\ea62";
+				}
+			}
+
+			&[aria-expanded="false"] {
+				&::after {
+					content: "\ea5f";
+				}
+			}
+
+			&::after {
+				margin-left: auto;
+				@include ti-styles;
+				content: "\ea5f";
+				font-size: 2em;
+				display: none;
+			}
+		}
+	}
+	ul {
+		li.navigation-item {
+			a.navigation-link {
+				@include padding("nora-link-overview-item");
+				display: flex;
+				width: 100%;
+				text-decoration: none;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 20px;
+				color: #767676;
+
+				&:hover, &:focus-visible {
+					transition: 100ms;
+				}
+
+				&:hover {
+					color: #000;
+				}
+
+				&:focus-visible {
+					background-color: var(--nora-link-overview-item-focus-visible-background-color);
+					color: var(--nora-link-overview-item-focus-visible-name-color);
+				}
+
+				&:before {
+					@include ti-styles;
+					content: "\ea1c";
+					display: inline-block;
+					margin-right: .25em;
+					font-size: 20px;
+				}
+
+				&.active {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	@include respond-to(md) {
+		position: sticky;
+		top: calc( var(--nora-navigation-bar-logo-large-vw-height) + 2em);
+		background: #fff;
+		border-radius: .25em;
+		border: 1px solid #ccc;
+		box-shadow:0 0 5px rgba(0,0,0,0.2);
+		h6 {
+			padding: 1em;
+			margin: 0 1em 0;
+			a {
+				&:after {
+					display: block;
+				}
+			}
+		}
+
+		ul {
+			border-top: 1px solid #ccc;
+			padding: 1em;
+
+			&[aria-hidden="true"] {
+				display: none;
+			}
+
+			&[aria-hidden="false"] {
+				display: block;
+			}
+		}
+	}
+}

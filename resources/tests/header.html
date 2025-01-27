@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="nora-theme">
+<head>
+    <meta charset="UTF-8">
+    <title>Component: Header</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../node_modules/@nl-design-system-community/nora-design-tokens/dist/theme.css"/>
+    <link rel="stylesheet" href="../../node_modules/@tabler/icons-webfont/dist/tabler-icons-filled.min.css"/>
+    <link rel="stylesheet" href="../../node_modules/@tabler/icons-webfont/dist/tabler-icons.min.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body style="margin: 2em;">
+
+<h1>Component: Header</h1>
+
+<hr/>
+
+<header class="navigation-bar">
+
+    <!-- Navigation toggler -->
+    <div class="navigation-toggle-container">
+        <button class="theme-button navigation-toggle" aria-label="Toon menu" aria-haspopup="true" aria-expanded="false" aria-controls="mainNavigation">
+            <i class="ti ti-menu-2"></i>
+        </button>
+    </div>
+    <!-- Navigation toggler -->
+
+    <!-- Logo -->
+    <a href="/index.php/NORA_online" class="navigation-bar-logo">
+        <img src="/skins/NORA/resources/images/logo-nora.svg" alt="NORA">
+    </a>
+    <!-- /Logo -->
+
+    <!-- Menu items -->
+    <div class="navigation-bar-navigation-container">
+        <ul class="navigation-bar-navigation" role="menu" id="mainNavigation" aria-expanded="false">
+
+            <li class="navigation-item">
+                <a href="/index.php/Referentiearchitectuur" id="n-Referentiearchitectuur" class="navigation-link">
+                    Referentiearchitectuur
+                </a>
+            </li>
+
+            <li class="navigation-item">
+                <a href="/index.php/Kennismodel" id="n-Kennismodel" class="navigation-link">
+                    Kennismodel
+                </a>
+            </li>
+
+            <li class="navigation-item">
+                <a href="/index.php/Kennisdeling" id="n-Kennisdeling" class="navigation-link">
+                    Kennisdeling
+                </a>
+            </li>
+
+            <li class="navigation-item">
+                <a href="/index.php/NORA_Familie" id="n-NORA-Familie" class="navigation-link">
+                    NORA Familie
+                </a>
+            </li>
+
+            <li class="navigation-item">
+                <a href="/index.php/Toolbox" id="n-Toolbox" class="navigation-link">
+                    Toolbox
+                </a>
+            </li>
+
+            <li class="navigation-item">
+                <a href="/index.php/Vakmanschap" id="n-Vakmanschap" class="navigation-link">
+                    Vakmanschap
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /Menu items -->
+
+    <div class="navigation-bar-search-links-container">
+        <!-- Searchbar -->
+        <div class="navigation-bar-search">
+            <form id="searchform" class="search-block-form show-block collapsible-menu-item" action="/index.php">
+                <input type="hidden" name="title" value="Speciaal:Zoeken">
+                <input type="search" name="search" placeholder="Doorzoek NORA2" aria-label="Doorzoek NORA2" autocapitalize="sentences" title="Doorzoek NORA2 [⌃⌥f]" accesskey="f" id="searchInput">
+                <input type="submit" name="go" value="OK" title="Naar een pagina met deze naam gaan als deze bestaat" class="searchButton" id="searchButton">
+            </form>
+        </div>
+        <!-- /Searchbar -->
+
+        <!-- Secondary nav -->
+        <ul class="navigation-bar-secondary-nav">
+            <li class="navigation-item">
+                <a href="/index.php/NORA2:Help" class="navigation-link">
+                    <span class="visually-hidden">Gebruikersmenu</span>
+                    <i class="ti ti-help"></i>
+                </a>
+            </li>
+            <li class="navigation-item with-dropdown">
+                <a href="#" class="navigation-link" aria-haspopup="true" aria-expanded="false" aria-controls="userMenu">
+                    <span class="visually-hidden"></span>
+                    <i class="ti ti-user-circle"></i>
+                </a>
+                <ul class="navigation-item-dropdown-menu align-left" aria-hidden="true" role="menu" id="userMenu">
+                    <li id="pt-userpage" class="mw-list-item navigation-item"><a href="/index.php/Gebruiker:Yvdbogert" title="Uw gebruikerspagina [⌃⌥.]" accesskey="." class="navigation-link">Yvdbogert</a></li><li id="pt-mytalk" class="mw-list-item navigation-item"><a href="/index.php/Overleg_gebruiker:Yvdbogert" class="new navigation-link" title="Uw overlegpagina (de pagina bestaat niet) [⌃⌥n]" accesskey="n">Overleg</a></li><li id="pt-adminlinks" class="mw-list-item navigation-item"><a href="/index.php/Speciaal:Beheerdersverwijzingen" class="navigation-link">Koppelingen voor beheerders</a></li><li id="pt-preferences" class="mw-list-item navigation-item"><a href="/index.php/Speciaal:Voorkeuren" title="Uw voorkeuren" class="navigation-link">Voorkeuren</a></li><li id="pt-watchlist" class="mw-list-item navigation-item"><a href="/index.php/Speciaal:Volglijst" title="Overzicht van pagina's die u volgt [⌃⌥l]" accesskey="l" class="navigation-link">Volglijst</a></li><li id="pt-mycontris" class="mw-list-item navigation-item"><a href="/index.php/Speciaal:Bijdragen/Yvdbogert" title="Overzicht van uw bijdragen [⌃⌥y]" accesskey="y" class="navigation-link">Bijdragen</a></li><li id="pt-logout" class="mw-list-item navigation-item"><a href="/index.php?title=Speciaal:Afmelden&amp;returnto=YouriTest" data-mw="interface" title="Afmelden" class="navigation-link">Afmelden</a></li>
+
+                </ul>
+            </li>        </ul>
+        <!-- /Secondary nav -->
+    </div>
+
+</header>
+
+<script src="../js/submenus.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/information-panel.js"></script>
+
+</body>
+</html>
