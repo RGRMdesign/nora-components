@@ -2,4 +2,13 @@
 $nora-theme-large-vw-breakpoint-size: map.get($viewport, md);
 
 @import "@nl-design-system-community/nora-design-tokens/dist/theme.css";
-@import '@nl-design-system-community/nora-design-tokens/dist/theme-large-vw.css' (min-width: $nora-theme-large-vw-breakpoint-size);
+@import '@nl-design-system-community/nora-design-tokens/dist/theme-large-vw.css'(min-width: $nora-theme-large-vw-breakpoint-size);
+
+
+// Fixes and customization
+.nora-theme {
+  
+  // Fix font variable
+  --nora-document-font-family: 'Source Sans 3', sans-serif;
+
+}
