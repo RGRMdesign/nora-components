@@ -1,0 +1,22 @@
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.ti {
+	font-size: var(--nora-size-icon-lg);
+}
+
+.error-message {
+	color: red;
+	background: #ffe4e4;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: .25em;
+}

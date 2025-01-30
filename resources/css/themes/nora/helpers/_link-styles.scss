@@ -1,0 +1,33 @@
+@mixin link-styles($component) {
+		border-radius: var(--#{$component}-border-radius);
+		color: var(--#{$component}-color);
+		text-decoration: none;
+	
+		&:visited {
+			color: var(--#{$component}-color);
+		}
+	
+		&:hover,
+		&:focus-within,
+		&:focus {
+			color: var(--#{$component}-hover-color);
+			background-color: var(--#{$component}-hover-background-color);
+			transition: 100ms;
+		}
+	
+		&:active {
+			color: var(--#{$component}-active-color);
+			background-color: var(--#{$component}-active-background-color);
+		}
+	
+		&:focus-visible {
+			color: var(--#{$component}-focus-visible-color);
+			background-color: var(--#{$component}-focus-visible-background-color);
+		}
+	
+		&.active {
+			color: var(--#{$component}-current-color);
+			background-color: var(--#{$component}-current-background-color);
+		}
+
+}

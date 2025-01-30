@@ -1,5 +1,7 @@
 @use "sass:map";
-$nora-theme-large-vw-breakpoint-size: map.get($viewport, md);
+@use "../../abstracts/variables";
+
+$nora-theme-large-vw-breakpoint-size: map.get(variables.$viewport, md);
 
 @import "@nl-design-system-community/nora-design-tokens/dist/theme.css";
 @import '@nl-design-system-community/nora-design-tokens/dist/theme-large-vw.css'(min-width: $nora-theme-large-vw-breakpoint-size);

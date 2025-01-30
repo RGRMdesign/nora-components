@@ -1,35 +1,44 @@
+@use "./base";
+@use './themes/nora/custom-properties';
+
+@use './layout/footer.scss';
+
 // Theme global mixins
-@import "./mixin";
-@import "./reset";
-@import "./mixins/mixins";
+// @import "./mixin";
+// @import "./reset";
+// @import "./mixins/mixins";
 
 // NORA Theme
-@import "./nora-theme.scss";
-@import "./font.scss";
+// @import "./nora-theme.scss";
+// @import "./font.scss";
 
 // Global styles
-@import "./mwreset";
-@import "./global";
+// @import "./mwreset";
+// @import "./global";
+
+// Icons
+// @import "./icons/icons.scss";
 
 // Base components
-@import "./components/submenu";
-@import "./components/withsep";
-@import "./components/iconOnly/iconOnly";
+// @import "./components/submenu";
+// @import "./components/withsep";
+// @import "./components/iconOnly/iconOnly";
 
 // Components
-@import "./components/skipLinks/main";
-@import "./components/navigationBar/navigationBar";
-@import "./components/breadcrumbToolsBar/tools";
-@import "./components/breadcrumbToolsBar/breadcrumbs";
-@import "./components/pageSection/main";
-@import "./components/linkOverview/main";
-@import "./components/labelLink/main";
-@import "./components/informationPanel/main";
-@import "./components/footer/main";
-@import "./components/table/main";
+// @import "./components/skipLinks/main";
+// @import "./components/navigationBar/navigationBar";
+// @import "./components/breadcrumbToolsBar/tools";
+// @import "./components/breadcrumbToolsBar/breadcrumbs";
+// @import "./components/pageSection/main";
+// @import "./components/linkOverview/main";
+// @import "./components/labelLink/main";
+// @import "./components/informationPanel/main";
+// @import "./components/footer/main";
+// @import "./components/table/main";
 
 // Extensions
-@import "./extensions/smartcomments";
-@import "./extensions/searchsuggestions";
-@import "./extensions/figure";
+// @import "./extensions/smartcomments";
+// @import "./extensions/searchsuggestions";
+// @import "./extensions/figure";
+
 
