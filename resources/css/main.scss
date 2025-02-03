@@ -2,6 +2,7 @@
 @use './themes/nora/custom-properties';
 
 @use './layout/footer.scss';
+@use './layout/navigation-bar.scss';
 
 // Theme global mixins
 // @import "./mixin";
@@ -20,7 +21,7 @@
 // @import "./icons/icons.scss";
 
 // Base components
-// @import "./components/submenu";
+@use "./components/submenu";
 // @import "./components/withsep";
 // @import "./components/iconOnly/iconOnly";
 
@@ -40,5 +41,3 @@
 // @import "./extensions/smartcomments";
 // @import "./extensions/searchsuggestions";
 // @import "./extensions/figure";
-
-

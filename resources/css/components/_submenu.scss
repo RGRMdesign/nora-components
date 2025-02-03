@@ -1,19 +1,26 @@
+@use 'sass:map';
+@use 'sass:color';
+@use '../abstracts/variables';
+@use '../themes/nora/abstracts/helpers';
+
 $base-submenu-color: #fff;
 
 li.navigation-item.with-dropdown {
 	position: relative;
 	ul.navigation-item-dropdown-menu {
+		@include helpers.reset-list;
+		
 		display: block;
 		opacity: 0;
 		visibility: hidden;
 		position: absolute;
 		right: auto;
-		z-index: map-get($z-index, "submenu");
+		z-index: map.get(variables.$z-index, "submenu");
 		li.navigation-item {
 			background: $base-submenu-color;
 			box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 			.navigation-link {
-				@include navigation-item("nora-navigation-bar-navigation-item");
+				@include helpers.button-link-state-colors("nora-navigation-bar-navigation-item");
 				&:visited {
 					color: black;
 				}
@@ -39,7 +46,7 @@ li.navigation-item.with-dropdown {
 			}
 			&:last-child {
 				.navigation-dropdown-item {
-					border-bottom: 2px solid darken($base-submenu-color, 10%);
+					border-bottom: 2px solid color.adjust($base-submenu-color, $lightness: -10%);
 				}
 			}
 		}
