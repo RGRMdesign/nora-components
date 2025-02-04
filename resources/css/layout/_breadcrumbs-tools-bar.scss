@@ -1,0 +1,5 @@
+@use '../themes/nora/components/breadcrumbs-tools-bar/mixins' as breadcrumbs-tools-bar;
+
+.breadcrumb-tools-container {
+  @include  breadcrumbs-tools-bar.breadcrumbs-tools-bar;
+}

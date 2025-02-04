@@ -1,8 +1,13 @@
 @use "./base";
 @use './themes/nora/custom-properties';
 
-@use './layout/footer.scss';
-@use './layout/navigation-bar.scss';
+@use './layout/breadcrumbs-tools-bar';
+@use './layout/footer';
+@use './layout/navigation-bar';
+@use './layout/page-section-article';
+
+@use './components/anchor-navigation';
+
 
 // Theme global mixins
 // @import "./mixin";
@@ -21,7 +26,7 @@
 // @import "./icons/icons.scss";
 
 // Base components
-@use "./components/submenu";
+@use "./components-old/submenu";
 // @import "./components/withsep";
 // @import "./components/iconOnly/iconOnly";
 

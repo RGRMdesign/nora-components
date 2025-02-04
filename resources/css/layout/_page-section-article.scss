@@ -1,0 +1,13 @@
+@use '../themes/nora/components/page-section/article/mixins' as article-section;
+
+#content {
+  @include article-section.article-section;
+}
+
+.content-navigation {
+  @include article-section.side-column;
+}
+
+.content-container { 
+  @include article-section.content;
+}
