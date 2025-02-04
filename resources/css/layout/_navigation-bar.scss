@@ -1,6 +1,7 @@
 @use '../themes/nora/components/navigation-bar/mixins' as navigation-bar;
 @use '../themes/nora/components/icon-only-button/mixins' as icon-only-button;
 @use '../themes/nora/abstracts/helpers';
+@use '../abstracts/icon';
 
 .navigation-bar {
 	@include navigation-bar.navigation-bar;
@@ -15,20 +16,15 @@
 	@include icon-only-button.icon-only-button(true);
 	@include navigation-bar.menu-toggle-button;
 
-	&[aria-expanded='false'] {
-		.navigation-toggle-open {
-			display: block;
-		}
-		.navigation-toggle-close {
-			display: none;
-		}
+	.ti-menu {
+		@include navigation-bar.menu-toggle-button-icon;
+
+		font-size: 1.5rem;
 	}
-	&[aria-expanded='true'] {
-		.navigation-toggle-open {
-			display: none;
-		}
-		.navigation-toggle-close {
-			display: block;
+
+	&[aria-expanded="true"] .ti-menu {
+		&::before {
+			content: icon.$ti-chevron-up;
 		}
 	}
 }

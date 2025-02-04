@@ -27,11 +27,12 @@ $show-search-breakpoint: 75rem;
 
 @mixin menu-toggle-button {
   background-color: var(--nora-color-blue-700);
+}
 
-  .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+@mixin menu-toggle-button-icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @mixin logo-link {
