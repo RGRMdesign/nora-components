@@ -4,10 +4,6 @@
 	@include helpers.visually-hidden;
 }
 
-.ti {
-	font-size: var(--nora-size-icon-lg);
-}
-
 .error-message {
 	color: red;
 	background: #ffe4e4;
