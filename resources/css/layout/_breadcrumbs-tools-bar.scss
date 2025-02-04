@@ -3,3 +3,7 @@
 .breadcrumb-tools-container {
   @include  breadcrumbs-tools-bar.breadcrumbs-tools-bar;
 }
+
+.tools-container {
+  display: none;
+}

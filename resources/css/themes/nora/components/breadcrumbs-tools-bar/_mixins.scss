@@ -1,4 +1,8 @@
+@use '../../abstracts/helpers';
+
 @mixin breadcrumbs-tools-bar {
+  @include helpers.padding(nora-breadcrumbs-tools-bar);
+  background-color: var(--nora-breadcrumbs-tools-bar-background-color);
   display: flex;
   justify-content: space-between;
 }

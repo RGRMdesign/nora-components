@@ -7,23 +7,8 @@
 @use './layout/page-section-article';
 
 @use './components/anchor-navigation';
+@use './components/breadcrumb-navigation';
 
-
-// Theme global mixins
-// @import "./mixin";
-// @import "./reset";
-// @import "./mixins/mixins";
-
-// NORA Theme
-// @import "./nora-theme.scss";
-// @import "./font.scss";
-
-// Global styles
-// @import "./mwreset";
-// @import "./global";
-
-// Icons
-// @import "./icons/icons.scss";
 
 // Base components
 @use "./components-old/submenu";
