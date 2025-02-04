@@ -66,6 +66,7 @@ $show-search-breakpoint: 75rem;
   display: block;
   inset: 100% 0 auto 0;
   position: absolute;
+  z-index: 1;
 }
 
 @mixin vertical-mainnav-list-item {
