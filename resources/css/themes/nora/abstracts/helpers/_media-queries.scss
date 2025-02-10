@@ -1,4 +1,3 @@
-@use '../breakpoints';
 
 @mixin mq($min-width) {
   @media (min-width: $min-width) {
@@ -7,7 +6,7 @@
 }
 
 @mixin large-vw {
-  @include mq(breakpoints.$nora-breakpoint-large-vw-min-width) {
+  @include mq(62rem) {
     @content;
   }
 }

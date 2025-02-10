@@ -78,7 +78,7 @@
 		@include navigation-bar.search-form-button;
 
 		/** Add icon and size since there is no separate icon */
-		background-image: url('/assets/icons/search-white.svg');
+		background-image: url('/assets/images/icon-search-white.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: var(--nora-navigation-bar-search-form-button-icon-size);
@@ -86,10 +86,11 @@
 		text-indent: -99999px;
 
 		&:focus-visible {
-			background-image: url('/assets/icons/search-black.svg');
+			background-image: url('/assets/images/icon-search-black.svg');
 		}
 	}
 }
+
 
 .navigation-bar-secondary-nav {
 	@include navigation-bar.utilities-list;

@@ -1,11 +1,4 @@
-@use './abstracts/breakpoints';
-
-$large-vw-breakpoint: breakpoints.$nora-breakpoint-large-vw-min-width !default;
-
-@import "@nl-design-system-community/nora-design-tokens/dist/theme.css";
-@import '@nl-design-system-community/nora-design-tokens/dist/theme-large-vw.css'(min-width: $large-vw-breakpoint);
-
-
+$large-vw-breakpoint: 62rem; // = 992px (bootstrap breakpoint)
 
 // Fixes and customization
 .nora-theme {
