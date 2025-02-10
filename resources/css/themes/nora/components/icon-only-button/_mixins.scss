@@ -8,12 +8,12 @@
   display: block;
   text-decoration: none;
 
-  @if($inverse) {
+  @if $inverse {
     @include helpers.button-link-state-colors(todo-icon-only-button-inverse);
 
     background-color: var(--todo-icon-only-button-inverse-background-color);
     color: var(--todo-icon-only-button-inverse-color);
-  } else {
+  } @else {
     @include helpers.button-link-state-colors(todo-icon-only-button);
 
     background-color: var(--todo-icon-only-button-background-color);

@@ -139,6 +139,94 @@
   </header>
   <!-- End: Header -->
 
+  <!-- Start: Breadcrumbs + Tools Bar -->
+  <section class="breadcrumb-tools-container">
+    <div class="breadcrumb-container">
+      <div id="breadcrumbs2">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs2-no-arrow breadcrumb-item"><a href="/index.php/NORA_online" title="NORA online"
+              class="breadcrumb-link">NORA</a></li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="">YouriTest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tools-container">
+      <ul class="tools">
+        <li id="ca-edit" class="tools-item navigation-item navigation-item-icon-only mw-list-item">
+          <a href="/index.php?title=YouriTest&amp;action=edit" class="tool-edit navigation-link">
+            <span class="visually-hidden">Bewerken</span>
+            <i class="ti ti-edit"></i>
+          </a>
+        </li>
+        <li id="ca-unwatch" class="tools-item navigation-item navigation-item-icon-only mw-list-item">
+          <a href="/index.php?title=YouriTest&amp;action=unwatch" class="tool-unwatch navigation-link" data-mw="interface">
+            <span class="visually-hidden">Niet volgen</span>
+            <!-- CHANGED: ti-star instead of ti-unwatch -->
+            <i class="ti ti-star"></i>
+            <!-- /CHANGED -->
+          </a>
+        </li>
+        <li id="ca-history" class="tools-item navigation-item navigation-item-icon-only mw-list-item">
+          <a href="/index.php?title=YouriTest&amp;action=history" class="tool-history navigation-link">
+            <span class="visually-hidden">Geschiedenis weergeven</span>
+            <!-- CHANGED: ti-calendar-edit instead of ti-history -->
+            <i class="ti ti-calendar-edit"></i>
+            <!-- /CHANGED -->
+          </a>
+        </li>
+
+        <li class="tools-item navigation-item smartcomments-toggler with-background with-dropdown">
+          <a href="#" class="navigation-link" aria-haspopup="true" aria-expanded="false" aria-controls="smartCommentsMenu">
+            SmartComments <span class="status">Uit</span>
+          </a>
+          <ul class="navigation-item-dropdown-menu align-left" role="menu" id="smartCommentsMenu" aria-hidden="true">
+            <li class="navigation-item sic-enable-commenting" id="ca-comments" role="none">
+              <a class="navigation-link" href="#">Aan</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tools-item navigation-item with-background with-dropdown navigation-item-icon-only">
+          <a href="#" class="navigation-link" aria-haspopup="true" aria-expanded="false" aria-controls="toolsMenu">
+            <span class="visually-hidden">Overige pagina handelingen bekijken</span>
+            <i class="ti ti-dots"></i>
+          </a>
+          <ul class="navigation-item-dropdown-menu align-left" role="menu" aria-hidden="true" id="toolsMenu">
+            <li class="navigation-item info">Naamruimten</li>
+            <li id="ca-nstab-main" class="selected mw-list-item navigation-item"><a href="/index.php/YouriTest"
+                title="Inhoudspagina bekijken [⌃⌥c]" accesskey="c" class="navigation-link">Pagina</a></li>
+            <li id="ca-talk" class="new mw-list-item navigation-item"><a
+                href="/index.php?title=Overleg:YouriTest&amp;action=edit&amp;redlink=1" rel="discussion"
+                title="Overleg over deze pagina (de pagina bestaat niet) [⌃⌥t]" accesskey="t"
+                class="navigation-link">Overleg</a></li>
+
+            <li class="navigation-item info">Meer</li>
+            <li id="ca-delete" class="mw-list-item navigation-item"><a
+                href="/index.php?title=YouriTest&amp;action=delete" title="Deze pagina verwijderen [⌃⌥d]" accesskey="d"
+                class="navigation-link">Verwijderen</a></li>
+            <li id="ca-move" class="mw-list-item navigation-item"><a
+                href="/index.php/Speciaal:PaginaHernoemen/YouriTest" title="Deze pagina hernoemen [⌃⌥m]" accesskey="m"
+                class="navigation-link">Hernoemen</a></li>
+            <li id="ca-protect" class="mw-list-item navigation-item"><a
+                href="/index.php?title=YouriTest&amp;action=protect" title="Deze pagina beveiligen [⌃⌥=]" accesskey="="
+                class="navigation-link">Beveiligen</a></li>
+            <li id="ca-unwatch" class="mw-watchlink mw-list-item navigation-item"><a
+                href="/index.php?title=YouriTest&amp;action=unwatch" data-mw="interface"
+                title="Deze pagina van mijn volglijst verwijderen [⌃⌥w]" accesskey="w" class="navigation-link"
+                aria-controls="mw-watchlink-notification">Niet volgen</a></li>
+            <li id="ca-smartbooks" class="mw-list-item navigation-item"><a
+                href="https://nora2.staging.wikixl.nl/index.php?title=YouriTest&amp;action=smartbook"
+                class="navigation-link">Pagina exporteren</a></li>
+            <li id="ca-purge" class="mw-list-item navigation-item"><a href="/index.php?title=YouriTest&amp;action=purge"
+                class="navigation-link">Vernieuwen</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End: Breadcrumbs + Tools Bar -->
+
   <!-- Start: Content -->
   <main id="content">
     <section class="content-navigation">
@@ -151,10 +239,11 @@
         </h6>
         <ul class="content-navigation-nav" id="contentNavigationNav" aria-hidden="true">
           <li class="navigation-item">
-            <a class="navigation-link" href="#Random">De rol van referentiearchitecturen binnen de Nederlandse Overheid</a>
+            <a class="navigation-link" href="#Random">De rol van referentiearchitecturen binnen de Nederlandse
+              Overheid</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#Ipsum">De NORA als referentie-architectuur voor de gehele overheid</a>
+            <a class="navigation-link" href="#Ipsum">De NORA als referentie-architectuur voor de gehele overheid</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#Dolor">Samenhang van de overheidsarchitecturen</a>
@@ -414,7 +503,7 @@
   <!-- Start: Footer -->
   <!-- CHANGED: added class name to footer -->
   <footer class="footer">
-  <!-- /CHANGED -->
+    <!-- /CHANGED -->
     <div class="noglossary footer-container-top">
       <div class="footer-top-item"><a href="/index.php/Referentiearchitectuur"
           class="navigation-header-item navigation-item">Referentiearchitectuur</a>

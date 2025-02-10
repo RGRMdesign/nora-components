@@ -3,13 +3,13 @@
 @use "./base" as mw-base;
 @use "./themes/nora/base" as nora-components-base;
 
-// @use './layout/breadcrumbs-tools-bar';
+@use './layout/breadcrumbs-tools-bar';
 @use './layout/footer';
 @use './layout/navigation-bar';
 @use './layout/page-section-article';
 
 @use './components/anchor-navigation';
-// @use './components/breadcrumb-navigation';
+@use './components/breadcrumb-navigation';
 
 @import "@nl-design-system-community/nora-design-tokens/dist/theme.css";
 @import '@nl-design-system-community/nora-design-tokens/dist/theme-large-vw.css'(min-width: custom-properties.$large-vw-breakpoint);
