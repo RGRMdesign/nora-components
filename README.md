@@ -1,8 +1,27 @@
 # NORA Components
 
-Dit is een minimaal Vite project waarin verschillende componenten voor de NORA UI gestyled kunnen worden.
+Dit is een minimaal Vite project waarin verschillende componenten voor de NORA UI gestyled worden.
 
-## 📦 Getting Started
+## Styling en Componenten
+
+Versie 0.1 bevat:
+- CSS Custom Properties van het NORA Theme
+- Basisonderdelen zoals
+  - Typografie
+  - en diverse resets
+- Footer
+- Navigation Bar
+- Page Section Article
+- Anchor Navigation
+
+## Gebruik
+
+- Laad `dist/mw-nora-components.css` in
+- Zorg dat de `assets` directory beschikbaar is in de root
+
+(`dist/index.html` en `dist/mw-custom.css` zijn alleen voor ontwikkel- en preview-doeleinden)
+
+## Development
 
 1. **Installeer afhankelijkheden**:
    ```bash
@@ -23,11 +42,4 @@ Dit is een minimaal Vite project waarin verschillende componenten voor de NORA U
    ```bash
    npm run preview
    ```
-
-## ✨ Styling en Componenten
-
-- De styling is gedaan in de aangeleverde SCSS-bestanden in `resources/css`.
-- De HTML van de componenten (vooralsnog alleen de Footer) is 1-op-1 gekopieerd uit de HTML van de bestanden in `resources/tests` naar de `index.html`.
-- Voor het gemak is de `dist` folder toegevoegd aan de repository. Hierin bevindt zich het gegenereerde css bestand.
-- Om verwarring te voorkomen zijn de aangeleverde gegeneerde css bestanden (`main.css` en `main.css.map`) verwijderd uit de repository.
 
