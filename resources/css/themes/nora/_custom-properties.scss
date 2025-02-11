@@ -4,7 +4,7 @@ $large-vw-breakpoint: 62rem; // = 992px (bootstrap breakpoint)
 .nora-theme {
 
   // Fix font variable
-  --nora-document-font-family: 'Source Sans 3', sans-serif;
+  --nora-typography-font-family-primary: 'Source Sans 3', sans-serif;
 
   // Fix for information-panel
   --nora-information-panel-font-size: var(--nora-inforamtion-panel-font-size);
