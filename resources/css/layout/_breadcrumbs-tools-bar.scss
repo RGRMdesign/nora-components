@@ -1,6 +1,7 @@
 @use '../themes/nora/components/breadcrumbs-tools-bar/mixins' as breadcrumbs-tools-bar;
 @use '../themes/nora/components/icon-only-button/mixins' as icon-only-button;
 @use '../abstracts/icon';
+@use '../themes/nora/abstracts/helpers';
 
 .breadcrumb-tools-container {
   @include breadcrumbs-tools-bar.breadcrumbs-tools-bar;
@@ -13,6 +14,14 @@
 
     // Reset gap
     gap: 0;
+  }
+
+  .tools-item:not(:last-child) {
+    display: none;
+
+    @include helpers.large-vw {
+      display: block;
+    }
   }
 
   .navigation-item-icon-only a {

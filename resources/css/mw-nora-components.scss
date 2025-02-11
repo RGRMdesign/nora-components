@@ -10,6 +10,8 @@
 
 @use './components/anchor-navigation';
 @use './components/breadcrumb-navigation';
+@use './components/information-panel';
+@use './components/label-link';
 
 @import "@nl-design-system-community/nora-design-tokens/dist/theme.css";
 @import '@nl-design-system-community/nora-design-tokens/dist/theme-large-vw.css'(min-width: custom-properties.$large-vw-breakpoint);
