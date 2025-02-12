@@ -2,6 +2,18 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+      }
+    }
+  },
+  resolve: {
+    alias: {
+      '~@utrecht': path.resolve(__dirname, 'node_modules/@utrecht'),
+    }
+  },
   build: {
     rollupOptions: {
       input: {
