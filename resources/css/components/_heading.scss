@@ -1,9 +1,9 @@
-@use '@utrecht/heading-1-css/src/mixin' as heading-1;
-@use '@utrecht/heading-2-css/src/mixin' as heading-2;
-@use '@utrecht/heading-3-css/src/mixin' as heading-3;
-@use '@utrecht/heading-4-css/src/mixin' as heading-4;
-@use '@utrecht/heading-5-css/src/mixin' as heading-5;
-@use '@utrecht/heading-6-css/src/mixin' as heading-6;
+@use '@utrecht/heading-1-css/src/html/mixin' as heading-1;
+@use '@utrecht/heading-2-css/src/html/mixin' as heading-2;
+@use '@utrecht/heading-3-css/src/html/mixin' as heading-3;
+@use '@utrecht/heading-4-css/src/html/mixin' as heading-4;
+@use '@utrecht/heading-5-css/src/html/mixin' as heading-5;
+@use '@utrecht/heading-6-css/src/html/mixin' as heading-6;
 
 /**
  * Fix heading font-size variables
@@ -17,30 +17,12 @@
 
 .content-container {
 
-
-  h1 {
-    @include heading-1.utrecht-heading-1;
-  }
-
-  h2 {
-    @include heading-2.utrecht-heading-2;
-  }
-
-  h3 {
-    @include heading-3.utrecht-heading-3;
-  }
-
-  h4 {
-    @include heading-4.utrecht-heading-4;
-  }
-
-  h5 {
-    @include heading-5.utrecht-heading-5;
-  }
-
-  h6 {
-    @include heading-6.utrecht-heading-6;
-  }
+  @include heading-1.utrecht-html-h1;
+  @include heading-2.utrecht-html-h2;
+  @include heading-3.utrecht-html-h3;
+  @include heading-4.utrecht-html-h4;
+  @include heading-5.utrecht-html-h5;
+  @include heading-6.utrecht-html-h6;
 
   /**
    * Revert margins to browser default
