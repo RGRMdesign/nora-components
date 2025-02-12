@@ -13,6 +13,7 @@
 @use './components/heading';
 @use './components/information-panel';
 @use './components/label-link';
+@use './components/paragraph';
 
 @import "@nl-design-system-community/nora-design-tokens/dist/theme.css";
 @import '@nl-design-system-community/nora-design-tokens/dist/theme-large-vw.css'(min-width: custom-properties.$large-vw-breakpoint);
