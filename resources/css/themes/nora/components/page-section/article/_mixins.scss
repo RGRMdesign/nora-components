@@ -28,8 +28,6 @@
 }
 
 @mixin content {
-  overflow: hidden;
-
   @include helpers.large-vw {
     flex: 1;
     max-width: var(--nora-page-section-article-content-max-width);
