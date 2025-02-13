@@ -1,18 +1,30 @@
 # NORA Components
 
-Dit is een minimaal Vite project waarin verschillende componenten voor de NORA UI gestyled worden.
+Dit is een Vite project waarin verschillende componenten van het NORA Design System ontwikkeld worden en voor de NORA MediaWiki UI gestyled worden.
 
 ## Styling en Componenten
 
-Versie 0.1 bevat:
+Versie 0.2 bevat:
 - CSS Custom Properties van het NORA Theme
 - Basisonderdelen zoals
   - Typografie
   - en diverse resets
-- Footer
-- Navigation Bar
-- Page Section Article
-- Anchor Navigation
+- NORA Design System Components:
+  - Footer
+  - Navigation Bar
+  - Page Section Article
+  - Anchor Navigation
+  - Information Panel
+  - Heading
+  - Paragraph
+  - Unordered List
+  - Ordered List
+  - Link
+  - Table
+  - Figure
+  - Avatar
+  - Data Summary
+  - Label Link
 
 ## Gebruik
 
