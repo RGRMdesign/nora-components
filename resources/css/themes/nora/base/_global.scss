@@ -15,15 +15,3 @@ body {
 	font-weight: var(--nora-document-font-weight);
 	margin: 0;
 }
-
-
-/** TODO: use @utrecht/link-css **/
-a {
-	color: var(--utrecht-link-color);
-	text-underline-offset: .1em;
-	text-decoration-thickness: .05em;
-
-	&:hover {
-		color: var(--utrecht-link-hover-color);
-	}
-}

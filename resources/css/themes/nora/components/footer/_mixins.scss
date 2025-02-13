@@ -39,7 +39,10 @@
   font-size: var(--nora-footer-link-header-font-size);
   font-weight: var(--nora-footer-link-header-font-weight);
   line-height: var(--nora-footer-link-line-height);
-  text-decoration: none;
+
+  &:any-link {
+    text-decoration: none;
+  }
 }
 
 @mixin link-group-sub-links-list {
