@@ -14,6 +14,8 @@ Versie 0.2 bevat:
   - Navigation Bar
   - Page Section Article
   - Anchor Navigation
+  - Breadcrumbs Navigation
+  - Breadcrumbs + Tools Bar
   - Information Panel
   - Heading
   - Paragraph
