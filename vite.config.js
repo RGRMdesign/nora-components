@@ -24,7 +24,7 @@ export default defineConfig({
       output: {
         assetFileNames: (assetInfo) => {
           if (/\.(woff2?|eot|ttf|otf)$/.test(assetInfo.names[0])) {
-            return 'assets/fonts/[name][extname]'; // Fonts gaan nu in dist/assets/fonts/
+            return 'skins/NORA/resources/fonts/[name][extname]'; // Fonts gaan nu in dist/skins/NORA/resources/fonts/
           }
           return '[name][extname]';
         }
