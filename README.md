@@ -31,7 +31,7 @@ Versie 0.2 bevat:
 ## Gebruik
 
 - Laad `dist/mw-nora-components.css` in
-- Zorg dat de `assets` directory beschikbaar is in de root
+- Zorg dat de `skins` directory beschikbaar is in de root
 
 (`dist/index.html` en `dist/mw-custom.css` zijn alleen voor ontwikkel- en preview-doeleinden)
 
