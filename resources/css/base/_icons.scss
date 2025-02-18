@@ -19,6 +19,16 @@
   }
 }
 
+.ti-code-dots {
+  &:before {
+    content: $ti-code-dots; 
+  }
+}
+.ti-star-filled {
+  &:before {
+    content: $ti-star-filled; 
+  }
+}
 .ti-image-maximize {
   &:before {
     content: $ti-image-maximize; 
