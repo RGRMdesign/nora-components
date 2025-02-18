@@ -5,6 +5,19 @@
 
 .breadcrumb-tools-container {
   @include breadcrumbs-tools-bar.breadcrumbs-tools-bar;
+
+  /** Since the html has nog structure for Page Body Component */
+	position: sticky;
+	top: 0;
+	z-index: 1;
+  
+  @at-root .page-body--scrolled & {
+    box-shadow: var(--nora-page-body-scrolled-header-container-box-shadow);
+  }
+
+  @include helpers.large-vw {
+    top: 3.75rem;
+  }
 }
 
 .tools-container {
