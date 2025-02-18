@@ -4,7 +4,7 @@ Dit is een Vite project waarin verschillende componenten van het NORA Design Sys
 
 ## Styling en Componenten
 
-Versie 0.2 bevat:
+Versie 0.3 bevat:
 - CSS Custom Properties van het NORA Theme
 - Basisonderdelen zoals
   - Typografie
@@ -27,6 +27,8 @@ Versie 0.2 bevat:
   - Avatar
   - Data Summary
   - Label Link
+  - Link Overview
+  - Page Content (alleen opmaak voor de Visual Banner)
 
 ## Gebruik
 
