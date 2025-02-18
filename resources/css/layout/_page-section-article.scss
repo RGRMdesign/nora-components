@@ -1,4 +1,5 @@
 @use '../themes/nora/components/page-section/article/mixins' as article-section;
+@use '../themes/nora/abstracts/helpers';
 
 #content {
   @include article-section.article-section;
@@ -8,6 +9,24 @@
   @include article-section.side-column;
 }
 
-.content-container { 
+.content-container {
   @include article-section.content;
+}
+
+body:has(>.background-container) {
+  overflow-x: hidden;
+  
+  #content {
+    margin-top: var(--nora-page-content-visual-banner-height);
+
+    @include helpers.large-vw {
+      margin-top: 12rem;
+      padding-block-start: 0;
+      position: relative;
+    }
+
+    &::before {
+      @include article-section.background-decorator;
+    }
+  }
 }

@@ -34,3 +34,19 @@
     min-width: var(--nora-page-section-article-content-min-width);
   }
 }
+
+@mixin background-decorator {
+  @include helpers.large-vw {
+    background-color: var(--nora-page-section-article-background-decorator-background-color);
+    border-radius: var(--nora-page-section-article-background-decorator-border-radius);
+    content: '';
+    display: block;
+    position: absolute;
+    top: -3rem;
+    right: -3.5rem;
+    left: -3.5rem;
+    bottom: auto;
+    height: 20rem;
+    z-index: -1;
+  }
+}
