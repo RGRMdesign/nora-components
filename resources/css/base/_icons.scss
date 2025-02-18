@@ -24,11 +24,6 @@
     content: $ti-code-dots; 
   }
 }
-.ti-star-filled {
-  &:before {
-    content: $ti-star-filled; 
-  }
-}
 .ti-image-maximize {
   &:before {
     content: $ti-image-maximize; 
@@ -89,7 +84,8 @@
     content: $ti-menu; 
   }
 }
-.ti-calendar-edit {
+.ti-calendar-edit,
+.ti-history {
   &:before {
     content: $ti-calendar-edit; 
   }
@@ -99,9 +95,16 @@
     content: $ti-user-circle; 
   }
 }
-.ti-star {
+.ti-star,
+.ti-watch {
   &:before {
     content: $ti-star; 
+  }
+}
+.ti-star-filled,
+.ti-unwatch {
+  &:before {
+    content: $ti-star-filled; 
   }
 }
 .ti-search {
