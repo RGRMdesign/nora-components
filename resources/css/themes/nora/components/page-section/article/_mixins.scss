@@ -23,6 +23,8 @@
   @include helpers.large-vw {
     flex: 1;
     max-width: var(--nora-page-section-article-navigation-max-width);
+
+    /** TODO fix min-width */
     min-width: var(--nora-page-section-article-navigation-min-width);
   }
 }

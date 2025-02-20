@@ -1,26 +1,28 @@
-.background-container {
-  position: absolute;
-  inset: 0 0 auto 0;
-  padding-block-start: 7.5rem;
-  overflow: hidden;
+.page-content__visual-banner {
+  display: block;
+  height: var(--nora-page-content-visual-banner-height);
+  margin: 0;
+  position: relative;
   z-index: -1;
 
-  figure {
-    margin: 0;
-    height: var(--nora-page-content-visual-banner-height);
-    background-size: 100%;
-    background-position: center;
-    position: relative;
-
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      inset: 0;
-      
-      /** TODO custom property from theme for background is not working correctly */
-      background: linear-gradient(0deg, rgba( #000000, 0.4), rgba( #000000, 0) 100%);
-    }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    
+    /** TODO custom property from theme for background is not working correctly */
+    background: linear-gradient(0deg, rgba( #000000, 0.4), rgba( #000000, 0) 100%);
   }
 }
 
+.page-content__visual-banner-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.page-content__content-wrapper {
+  margin-block-start: var(--nora-page-content-with-visual-banner-content-wrapper-margin-block-start);
+}
