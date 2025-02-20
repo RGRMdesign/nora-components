@@ -1,6 +1,6 @@
 @use '@utrecht/paragraph-css/src/mixin' as paragraph;
 
-.content-container {
+.mw-body-content {
 
   p {
     @include paragraph.utrecht-paragraph;

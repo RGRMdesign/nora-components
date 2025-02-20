@@ -1,4 +1,4 @@
-@use '@utrecht/heading-1-css/src/html/mixin' as heading-1;
+@use '@utrecht/heading-1-css/src/mixin' as heading-1;
 @use '@utrecht/heading-2-css/src/html/mixin' as heading-2;
 @use '@utrecht/heading-3-css/src/html/mixin' as heading-3;
 @use '@utrecht/heading-4-css/src/html/mixin' as heading-4;
@@ -15,9 +15,17 @@
   --utrecht-heading-1-font-size: calc(var(--utrecht-heading-2-font-size) * var(--nora-typography-heading-scale));
 }
 
-.content-container {
+.mw-first-heading {
+  @include heading-1.utrecht-heading-1;
 
-  @include heading-1.utrecht-html-h1;
+  /**
+   * Revert margin-block-end to browser default
+   */
+  margin-block-end: revert;
+}
+
+.mw-body-content {
+
   @include heading-2.utrecht-html-h2;
   @include heading-3.utrecht-html-h3;
   @include heading-4.utrecht-html-h4;
@@ -27,7 +35,6 @@
   /**
    * Revert margins to browser default
    */
-  h1,
   h2,
   h3,
   h4,
@@ -35,13 +42,6 @@
   h6 {
     margin-block-end: revert;
     margin-block-start: revert;
-  }
-
-  /**
-   * Remove margin above h1
-   **/
-  h1 {
-    margin-block-start: 0;
   }
 
 }
