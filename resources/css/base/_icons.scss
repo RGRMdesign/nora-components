@@ -29,7 +29,8 @@
     content: $ti-image-maximize; 
   }
 }
-.ti-forms {
+.ti-forms,
+.ti-formedit {
   &:before {
     content: $ti-forms; 
   }
