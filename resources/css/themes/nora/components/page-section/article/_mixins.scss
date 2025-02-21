@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--nora-page-section-article-container-gap);
-
+  position: relative;
 
   @include helpers.large-vw {
     flex-direction: row-reverse;
@@ -23,7 +23,8 @@
   @include helpers.large-vw {
     flex: 1;
     max-width: var(--nora-page-section-article-navigation-max-width);
-    min-width: var(--nora-page-section-article-navigation-min-width);
+    /** Not using a min-width seems to work better */
+    // min-width: var(--nora-page-section-article-navigation-min-width);
   }
 }
 
@@ -42,11 +43,12 @@
     content: '';
     display: block;
     position: absolute;
-    top: -3rem;
+    top: 0;
     right: -3.5rem;
     left: -3.5rem;
     bottom: auto;
-    height: 20rem;
+    height: 10rem;
+    pointer-events: none;
     z-index: -1;
   }
 }

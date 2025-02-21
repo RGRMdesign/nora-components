@@ -1,26 +1,13 @@
-.background-container {
-  position: absolute;
-  inset: 0 0 auto 0;
-  padding-block-start: 7.5rem;
-  overflow: hidden;
-  z-index: -1;
+@use '../themes/nora/components/page-content/mixins' as page-content;
 
-  figure {
-    margin: 0;
-    height: var(--nora-page-content-visual-banner-height);
-    background-size: 100%;
-    background-position: center;
-    position: relative;
-
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      inset: 0;
-      
-      /** TODO custom property from theme for background is not working correctly */
-      background: linear-gradient(0deg, rgba( #000000, 0.4), rgba( #000000, 0) 100%);
-    }
-  }
+.page-content__visual-banner {
+  @include page-content.visual-banner;
 }
 
+.page-content__visual-banner-image {
+  @include page-content.visual-banner-image;
+}
+
+.page-content:has(.page-content__visual-banner) > .page-content__content-wrapper {
+  @include page-content.with-visual-banner-content-wrapper;
+}
