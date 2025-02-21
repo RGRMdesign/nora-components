@@ -13,18 +13,8 @@
   @include article-section.content;
 }
 
-.page-content:has(>.page-content__visual-banner) {
-  
-  /** TODO fix overflow of background-decorator */
-  overflow-x: hidden;
-  
+.page-content:has(.page-content__visual-banner) { 
   .page-section-article:first-child {
-
-    @include helpers.large-vw {
-      padding-block-start: 0;
-      position: relative;
-    }
-
     &::before {
       @include article-section.background-decorator;
     }
