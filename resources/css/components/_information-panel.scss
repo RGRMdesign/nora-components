@@ -10,6 +10,11 @@
   p {
     margin: 0;
   }
+
+  .nora-avatar {
+    height: 3.375rem;
+    width: 3.375rem;
+  }
 }
 
 .panel-items-header {
@@ -18,29 +23,22 @@
   >.column {
     @include information-panel.header-group;
 
-    &.profile {
+    &:first-child {
       @include information-panel.header-contact-group;
-
-      .colums {
-        overflow: hidden;
-      }
-    }
-  }
-
-  .column-picture {
-    @include avatar.avatar(3.375rem);
-    @include information-panel.header-contact-group-avatar;
-
-    img {
-      @include avatar.image;
     }
   }
 
   .column-content {
     @include information-panel.labelled-content;
 
-    label {
+    b {
       @include information-panel.labelled-content-key;
+
+      font-weight: var(--nora-document-font-weight);
+
+      &::after {
+        display: none;
+      }
     }
 
     >span {
@@ -61,6 +59,35 @@
       }
     }
   }
+
+  .contact-details-wrapper {
+    display: flex;
+    gap: var(--nora-information-panel-primary-contact-gap);
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .contact-details {
+    overflow-x: hidden;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+
+    .ti {
+      font-size: 1.25rem;
+    }
+
+    a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+    }
+  }
+
 }
 
 .panel-items-overview {
@@ -76,11 +103,8 @@
     @include information-panel.footer-contributors-wrapper;
 
     .profile-picture {
-      @include avatar.avatar(2rem);
-      
-      img {
-        @include avatar.image;
-      }
+      height: 2rem;
+      width: 2rem;
 
       &:not(:first-child) {
         margin-left: -1rem;
@@ -133,9 +157,12 @@
 }
 
 #information-panel[aria-expanded="true"] {
-  .panel-items-header, .panel-footer .contributors {
+
+  .panel-items-header,
+  .panel-footer .contributors {
     display: none;
   }
+
   .panel-footer {
     a {
       i {
@@ -157,7 +184,7 @@
   .panel-item {
     @include data-summary.item;
 
-    > label {
+    >label {
       @include data-summary.key;
     }
 
