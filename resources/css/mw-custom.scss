@@ -3,6 +3,8 @@
 // Base components
 @use "./components-old/submenu";
 
+@use './components/related-links';
+
 
 .visually-hidden {
 	@include helpers.visually-hidden;
