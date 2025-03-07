@@ -18,8 +18,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
-        'mw-nora-components': path.resolve(__dirname, 'resources/css/mw-nora-components.scss'),
-        'mw-custom': path.resolve(__dirname, 'resources/css/mw-custom.scss')
+        'mw-nora-components': path.resolve(__dirname, 'src/css/mw-nora-components.scss'),
+        'mw-custom': path.resolve(__dirname, 'src/css/mw-custom.scss')
       },
       output: {
         assetFileNames: (assetInfo) => {
